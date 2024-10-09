@@ -2,11 +2,10 @@
 /* eslint-disable jsx-a11y/alt-text */
 "use client";
 
+import { cn } from "@/lib/utils";
+import { useInView } from "framer-motion";
 import { HTMLAttributes, useEffect, useRef, useState } from "react";
 import MaxWidthWrapper from "./MaxWidthWrapper";
-import { useInView } from "framer-motion";
-import { cn } from "@/lib/utils";
-import { div } from "framer-motion/client";
 import Phone from "./Phone";
 
 const PHONES = [

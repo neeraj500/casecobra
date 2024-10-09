@@ -1,8 +1,7 @@
+import { db } from "@/db";
+import sharp from "sharp";
 import { createUploadthing, type FileRouter } from "uploadthing/next";
 import { z } from "zod";
-import sharp from "sharp";
-import { db } from "@/db";
-import { fileURLToPath } from "url";
 
 const f = createUploadthing();
 
@@ -45,7 +44,7 @@ export const ourFileRouter = {
         return { configId: updatedConfiguration.id };
       }
 
-      return { configId };
+      // return { configId };
     }),
 } satisfies FileRouter;
 
